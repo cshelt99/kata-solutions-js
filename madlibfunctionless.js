@@ -2,21 +2,17 @@ var sentence = [];
 var replacements = [];
 var index = 0;
 
-filler(sentence,"Next Word: ");
-filler(sentence,"Next Word: ");
-filler(replacements, "Next Positon: ");
 
 
 	index = 0;
 do {
 	console.log(index);
-		myArray[index] = prompt(myPrompt+index+ ":");
+		sentence[index] = prompt(replacements+index+ ":");
 	index++;
 }
-	while(myArray[index - 1] != "^");
-	myArray.pop();
-	console.log(myArray);
-	
+	while(sentence[index - 1] != "^") 
 		
-	}
-filler(sent,"Word:");
+	
+	sentence.pop();
+	console.log(sentence);
+	
